@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #484848;
+  background-color: white;
+  text-align: center;
+}
+
+p {
+  margin: 6px 0;
+  color: #777777;
+}
+
+.fab {
+  margin-right: 10px;
+  font-size: 30px;
+  color: #777777;
+}
+
+.fab:hover {
+  color: #70D6FF;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.orange-bkg {
+  background-color: #FF9D7A;
+}
+
+.purple-bkg {
+  background-color: #5B3758;
+}
+
+.card {
+  background-color: white;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  border-radius: 7px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+  justify-content: center;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.5);
+}
+
+.icon-list {
+  padding: 0;
+  list-style: none;
+}
+
+.inline {
+display: inline;
+}
+
+.circular {
+  border-radius: 50%
+}
+
+.card-column {
+  margin-right: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card-right {
+  text-align: left;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-weight: 200;
+  font-size: 14px;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+.hero-button {
+  text-decoration: none;
+  width: fit-content;
+  color: white;
+  background-color: #70D6FF;
+  border-radius: 3px;
+  padding: 6px 12px;
+  border: 0;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.hero-button:hover {
+  background-color: rgb(100,200,240)
+}
+
+#contact-form {
+  display: flex;
+  margin: 10px auto;
+  flex-direction: column;
+  width: max-content;
+}
+
+.input-area {
+  text-align: right;
+  margin: 10px 0;
+}
+
+.input-field {
+  height: 30px;
+  width: 400px;
+  border-radius: 6px;
+  border: 0;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  padding: 8px 10px;
+  color: #484848;
+  margin-left: 10px;
+}
+
+.input-field:focus {
+  outline: 0;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.message-field {
+  height: 200px;
+}
+
+.tag {
+  position: absolute;
+  bottom: 66px;
+  right: -30px;
+  transform: rotate(90deg);
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.white-txt {
+  color: white;
+}
+
+.profile-card {
+  width: 520px;
+  height: 300px;
+}
+
+.contact-card {
+  width: 800px;
+  height: 500px;
+  flex-direction: column;
+}
+
+@media (max-width: 900px) {
+  .profile-card {
+    width: 520px;
+    height: 300px;
+  }
+
+  .contact-card {
+    width: 500px;
+    height: 700px;
+    flex-direction: column;
+  }
+
+  .input-area {
+    display: contents;
+  }
+
+  .input-field {
+    margin: 5px 0 30px 0;
+  }
+}
