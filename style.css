@@ -49,6 +49,27 @@ p {
   background-color: #5B3758;
 }
 
+.carddeck {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.front {
+  z-index: 3;
+  transform: translate(0, -50%);
+}
+
+#back-card-1 {
+  transform: translate(0, -50%) rotate(3deg);
+  z-index: 2;
+}
+
+#back-card-2 {
+  transform: translate(0, -50%) rotate(6deg);
+  z-index: 2;
+}
+
 .card {
   background-color: white;
   margin: 0 auto;
@@ -157,6 +178,7 @@ h3 {
 }
 
 .profile-card {
+  position: absolute;
   width: 520px;
   height: 300px;
 }
