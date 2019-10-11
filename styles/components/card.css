@@ -1,0 +1,76 @@
+
+.carddeck {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes slide {
+  from {transform: translate(0, -50%) rotate(0deg);}
+  to {transform: translate(-290px, -400px) rotate(-15deg);}
+}
+
+.front {
+  z-index: 3;
+  transform: translate(0, -50%);
+}
+
+.front:active {
+  animation-name: slide;
+  animation-duration: 2s;
+}
+
+#back-card-1 {
+  /*transform: translate(1%, -47%) rotate(3deg);*/
+  transform: translate(0, -50%) rotate(3deg);
+  z-index: 2;
+  /*height: 290px;*/
+  /*width: 510px;*/
+}
+
+#back-card-2 {
+  transform: translate(0, -50%) rotate(6deg);
+  /*transform: translate(3%, -42%) rotate(6deg);*/
+  z-index: 1;
+  /*height: 290px;*/
+  /*width: 500px;*/
+}
+
+.card {
+  background-color: white;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  border-radius: 7px;
+  box-shadow: 5px 5px 14px rgba(0,0,0,0.2);
+  justify-content: center;
+
+}
+
+.card:hover {
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.4);
+}
+
+.card-column {
+  margin-right: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card-right {
+  text-align: left;
+}
+
+
+.profile-card {
+  position: absolute;
+  width: 520px;
+  height: 300px;
+}
+
+.contact-card {
+  width: 800px;
+  height: 500px;
+  flex-direction: column;
+}

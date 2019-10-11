@@ -1,0 +1,22 @@
+.hero-button {
+  text-decoration: none;
+  width: fit-content;
+  color: white;
+  background-color: #70D6FF;
+  border-radius: 3px;
+  padding: 6px 12px;
+  border: 0;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  margin-right: 10px;
+}
+
+.hero-button:hover {
+  background-color: rgb(100,200,240)
+}
+
+.hero-button:active {
+  background-color: rgb(60,160,200)
+}
+
+

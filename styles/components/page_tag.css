@@ -1,0 +1,26 @@
+.tag {
+  position: absolute;
+  bottom: 78px;
+  right: -30px;
+  transform: rotate(90deg);
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.tag-block {
+  position: absolute;
+  bottom: 0px;
+  right: 15px;
+  transform: rotate(90deg);
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 30px;
+}
+
+.blink_me {
+  animation: blinker 1s ease-out infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
